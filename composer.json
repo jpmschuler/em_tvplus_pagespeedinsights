@@ -31,7 +31,7 @@
         }
     },
     "replace": {
-        "em_tvplus_pagespeedinsights": "self.version",
+        "extrameile/em_tvplus_pagespeedinsights": "self.version",
         "typo3-ter/em_tvplus_pagespeedinsights": "self.version"
     }
 }
