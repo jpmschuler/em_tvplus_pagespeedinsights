@@ -1,0 +1,37 @@
+{
+    "name": "extrameile/em_tvplus_pagespeedinsights",
+    "type": "typo3-cms-extension",
+    "description": "Integration of PageSpeed Insight extension into TemplaVoilà! Plus page layout module.",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "TemplaVoila",
+        "pagespeed",
+        "insights"
+    ],
+    "homepage": "https://templavoila.plus/",
+    "license": ["GPL-2.0+"],
+    "authors": [
+        {
+            "name": "Alexander Opitz",
+            "email": "opitz@extrameile-gehen.de",
+            "homepage": "https://www.extrameile-gehen.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5.0",
+        "haassie/page-speed-insights": "^1.1.0",
+        "templavoilaplus/templavoilaplus": ">=7.1.3 <7.99.99",
+        "php": ">=7.2.0 <7.4.99"
+    },
+    "autoload": {
+        "psr-4": {
+            "Extrameile\\EmTvplusPagespeedinsights\\": "Classes/"
+        }
+    },
+    "replace": {
+        "em_tvplus_pagespeedinsights": "self.version",
+        "typo3-ter/em_tvplus_pagespeedinsights": "self.version"
+    }
+}
