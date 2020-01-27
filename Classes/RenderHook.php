@@ -1,9 +1,10 @@
 <?php
 declare(strict_types = 1);
+
 namespace Extrameile\EmTvplusPagespeedinsights;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 use Ppi\TemplaVoilaPlus\Controller\BackendLayoutController;
 
@@ -15,9 +16,9 @@ use Ppi\TemplaVoilaPlus\Controller\BackendLayoutController;
  */
 class RenderHook
 {
-    public function renderHeaderFunctionHook(array $params, BackendLayoutController $parentObject)
+    public function renderHeaderFunctionHook(array $params, BackendLayoutController $parentObject): string
     {
-        /** @var TYPO3\CMS\Backend\Controller\PageLayoutController $pageLayoutController */
+        /** @var \TYPO3\CMS\Backend\Controller\PageLayoutController $pageLayoutController */
         $GLOBALS['SOBE'] = GeneralUtility::makeInstance(\TYPO3\CMS\Backend\Controller\PageLayoutController::class);
         $GLOBALS['SOBE']->id = $parentObject->id;
         $GLOBALS['SOBE']->current_sys_language = $parentObject->currentLanguageUid;
