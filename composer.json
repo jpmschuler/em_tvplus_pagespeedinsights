@@ -33,5 +33,26 @@
     "replace": {
         "extrameile/em_tvplus_pagespeedinsights": "self.version",
         "typo3-ter/em_tvplus_pagespeedinsights": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web"
+        }
+    },
+    "repositories": {
+        "grumphp-conventions-typo3": {
+            "type": "vcs",
+            "url": "https://github.com/extrameile/grumphp-conventions-typo3.git"
+        }
+    },
+    "require-dev": {
+        "typo3/testing-framework": "4",
+        "extrameile/grumphp-conventions-typo3": "dev-master",
+        "vimeo/psalm": "^3.8"
     }
 }
