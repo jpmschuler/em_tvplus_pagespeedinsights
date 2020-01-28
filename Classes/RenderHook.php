@@ -16,6 +16,9 @@ use Ppi\TemplaVoilaPlus\Controller\BackendLayoutController;
  */
 class RenderHook
 {
+    /**
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
     public function renderHeaderFunctionHook(array $params, BackendLayoutController $parentObject): string
     {
         /** @var \TYPO3\CMS\Backend\Controller\PageLayoutController $pageLayoutController */
