@@ -1,18 +1,16 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Extrameile\EmTvplusPagespeedinsights;
 
+use Ppi\TemplaVoilaPlus\Controller\BackendLayoutController;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-
-use Ppi\TemplaVoilaPlus\Controller\BackendLayoutController;
 
 /**
  * Class to add PageSpeed Insights to the templavoila page module
  * Uses the renderHeaderFunctionHook hook
- *
- * @author Alexander Opitz <opitz@extrameile-gehen.de>
  */
 class RenderHook
 {
