@@ -1,5 +1,5 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Extrameile\EmTvplusPagespeedinsights;
 
@@ -37,10 +37,10 @@ class RenderHook
             ['id' => (int)$parentObject->id]
         );
 
-        $returnUrlFalse = rawurlencode($returnUrlFalse);
-        $returnUrlTemplaVoila = rawurlencode($returnUrlTemplaVoila);
+        $returnUrlFalse = \rawurlencode($returnUrlFalse);
+        $returnUrlTemplaVoila = \rawurlencode($returnUrlTemplaVoila);
 
-        $output = str_replace($returnUrlFalse, $returnUrlTemplaVoila, $output);
+        $output = \str_replace($returnUrlFalse, $returnUrlTemplaVoila, $output);
 
         return $output;
     }
