@@ -1,4 +1,5 @@
 <?php
+
 $EM_CONF[$_EXTKEY] = [
     'title' => 'TemplaVoilà! Plus for PageSpeed Insight extension',
     'description' => 'Integration of PageSpeed Insight extension into TemplaVoilà! Plus page layout module.',
